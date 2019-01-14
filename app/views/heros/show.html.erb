@@ -1,0 +1,3 @@
+<%=  @hero.name %> lives in <%= @hero.city %> and has <%= @hero.super_powers %><br>
+<%= button_to "Edit Hero", heros_edit_path(@hero), method: :get %>
+<%= button_to "Delete Hero", hero_path(@hero), method: :delete %>

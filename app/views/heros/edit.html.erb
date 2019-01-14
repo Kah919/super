@@ -1,0 +1,11 @@
+<h1>Career Change</h1>
+<%= form_for @hero do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :city %>
+  <%= f.text_field :city %>
+  <%= f.label :super_powers %>
+  <%= f.text_field :super_powers %>
+
+  <%= f.submit "Edit Hero" %>
+<% end %>

@@ -1,0 +1,3 @@
+class VillainsControllers < ApplicationController
+
+end
