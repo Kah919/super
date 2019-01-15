@@ -1,0 +1,5 @@
+<ul>
+  <% @villains.each do |villain| %>
+  <li><%= link_to villain.name, villain_path(villain)  %></li>
+  <% end %>
+</ul>

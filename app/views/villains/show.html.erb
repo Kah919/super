@@ -1,0 +1,3 @@
+<%= @villain.name %> is using <%= @villain.super_powers %> on <%= @villain.city %> <br>
+<%= button_to "Edit Villain", villains_edit_path(@villain), method: :get %>
+<%= button_to "Delete Villain", villain_path(@villain), method: :delete %>

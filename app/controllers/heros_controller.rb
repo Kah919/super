@@ -29,7 +29,7 @@ class HerosController < ApplicationController
   def delete
     @hero = Hero.find(params[:id])
     @hero.destroy
-    redirect_to heros_path()
+    redirect_to heros_path
   end
 
   private
@@ -38,16 +38,5 @@ class HerosController < ApplicationController
     params.require(:hero).permit(:name, :city, :super_powers)
   end
 
-  # def update
-  #   hero = Hero.find(params[:id])
-  #   hero.update(hero_params(:name, :city, :super_powers))
-  #   redirect_to heros_path(hero)
-  # end
-  #
-  # private
-  #
-  # def hero_params(*args)
-  #   params.require(:hero).permit(*args)
-  # end
 
 end

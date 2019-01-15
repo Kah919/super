@@ -8,4 +8,12 @@ Rails.application.routes.draw do
   patch "/heros/:id", to: "heros#update"
   delete "/heros/:id", to: "heros#delete"
 
+
+  get "/villains", to: "villains#index"
+  get "/villains/new", to: "villains#new"
+  get "/villains/:id", to: "villains#show", as: "villain"
+  post "/villains", to: "villains#create"
+  get "/villains/:id/edit", to: "villains#edit", as: "villains_edit"
+  patch "/villains/:id", to: "villains#update"
+  delete "/villains/:id", to: "villains#delete"
 end
